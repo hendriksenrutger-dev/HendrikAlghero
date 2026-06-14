@@ -1,4 +1,4 @@
-const CACHE = 'alghero2026-v2';
+const CACHE = 'alghero2026-v3';
 const FILES = ['./index.html', './manifest.json'];
 
 self.addEventListener('install', function(e) {
