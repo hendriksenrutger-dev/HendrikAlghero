@@ -18,6 +18,7 @@
   --c4:#2A6B4F;--c4l:#EDF5F1;--c4m:#7FB89F;
   --c5:#6B3A8F;--c5l:#F2EEF9;--c5m:#A98FD0;
   --c6:#8F6B1A;--c6l:#F8F3E8;--c6m:#C4A47F;
+  --c7:#7A3B1E;--c7l:#F9EDE8;--c7m:#C47F5C;
   --active:var(--c1);--al:var(--c1l);--am:var(--c1m);
   --bg:#F5F0E8;--white:#fff;--text:#1A1A1A;--muted:#6B6B6B;--border:#E8E4DF;
   --sh:0 4px 24px rgba(0,0,0,0.07);--shlg:0 8px 32px rgba(0,0,0,0.13);
@@ -212,6 +213,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);pad
     <button class="tab" onclick="sw('eten','--c4','--c4l','--c4m',this)">🍷 Eten</button>
     <button class="tab" onclick="sw('excursie','--c5','--c5l','--c5m',this)">🚗 Excursies</button>
     <button class="tab" onclick="sw('tips','--c6','--c6l','--c6m',this)">💡 Tips</button>
+    <button class="tab" onclick="sw('weetjes','--c7','--c7l','--c7m',this)">📜 Weetjes</button>
     <button class="tab" onclick="sw('vouchers','--c1','--c1l','--c1m',this)">🎫 Vouchers</button>
   </div>
 </div>
@@ -703,6 +705,30 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);pad
     </div>
   </div>
 
+  <div class="acard" onclick="tog(this)">
+    <div class="ahead">
+      <div class="adot">·</div><div class="aemoji">🍯</div>
+      <div class="amain"><div class="aname">Seadas</div><div class="asub">Sardijns dessert · verplicht te proberen</div></div>
+      <div class="achev">⌄</div>
+    </div>
+    <div class="abody">
+      <p>Gefrituurde deegpakketjes gevuld met verse schapenkaas (licht zout), overgoten met lokale honing. De combinatie zoet-zout-krokant is onweerstaanbaar. Op vrijwel elke menukaart in Alghero te vinden. Één keer proberen is niet genoeg.</p>
+      <span class="tag">Must try</span><span class="tag">Op elke menukaart</span>
+    </div>
+  </div>
+
+  <div class="acard" onclick="tog(this)">
+    <div class="ahead">
+      <div class="adot">·</div><div class="aemoji">🫓</div>
+      <div class="amain"><div class="aname">Pani Carasau</div><div class="asub">Krokant Sardijns flatbread · eeuwenoud</div></div>
+      <div class="achev">⌄</div>
+    </div>
+    <div class="abody">
+      <p>Flinterdun, krokant flatbread dat al duizenden jaren op Sardinië gemaakt wordt. Als brood bij het eten, of thuis met olijfolie en grof zout als snack. In vacuümverpakking ideaal als souvenir. Koop het bij een lokale supermarkt — veel goedkoper dan in de toeristische winkels.</p>
+      <span class="tag">Souvenir</span><span class="tag">Maanden houdbaar</span>
+    </div>
+  </div>
+
 </div>
 
 <!-- ===== EXCURSIES ===== -->
@@ -934,7 +960,19 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);pad
     </div>
   </div>
 
-  <div class="acard" onclick="tog(this)">
+    <div class="acard" onclick="tog(this)">
+    <div class="ahead">
+      <div class="adot">·</div><div class="aemoji">🛒</div>
+      <div class="amain"><div class="aname">Woensdag markt</div><div class="asub">Wekelijks · lokale producten · souvenirs</div></div>
+      <div class="achev">⌄</div>
+    </div>
+    <div class="abody">
+      <p>Elke woensdag is er een markt nabij het centrum. Lokale producten, groenten, kleding en souvenirs — een stuk goedkoper dan in de winkeltjes in de oude stad. Goed moment om Pani Carasau, Bottarga of lokale honing in te slaan. Vroeg gaan voor de beste keuze.</p>
+      <span class="tag">Elke woensdag</span><span class="tag">Goedkoper dan toeristische winkels</span>
+    </div>
+  </div>
+
+<div class="acard" onclick="tog(this)">
     <div class="ahead">
       <div class="adot">·</div><div class="aemoji">🗣️</div>
       <div class="amain"><div class="aname">Handig Italiaans</div><div class="asub">Basiswoorden voor de vakantie</div></div>
@@ -947,6 +985,118 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);pad
 
 </div>
 
+<!-- ===== WEETJES ===== -->
+<div class="panel" id="weetjes">
+
+  <div class="sec-header" style="background:var(--c7l);border-left-color:var(--c7);">
+    <div class="sec-icon">📜</div>
+    <div class="sec-info">
+      <h2>Weetjes &amp; Geschiedenis</h2>
+      <p>Alghero · Sardinia · Catalaans erfgoed</p>
+    </div>
+  </div>
+
+  <div class="slabel">Geschiedenis</div>
+
+  <div class="acard" onclick="tog(this)">
+    <div class="ahead">
+      <div class="adot">·</div><div class="aemoji">🗿</div>
+      <div class="amain"><div class="aname">Prehistorie: de Nuragische beschaving</div><div class="asub">Vóór 1000 v.Chr. · onopgelost raadsel</div></div>
+      <div class="achev">⌄</div>
+    </div>
+    <div class="abody">
+      <p>Vóór de Grieken, Feniciërs en Romeinen leefde op Sardinië de mysterieuze Nuragische beschaving. Ze bouwden duizenden steentorens (nuraghi) verspreid over het eiland — nergens anders ter wereld. Geen ontcijferd schrift, onduidelijke herkomst. De Nuraghe di Palmavera op 12 km van Alghero is een van de best bewaarde complexen. Een beschaving die verdween zonder volledig begrepen te worden.</p>
+      <span class="tag">Nuraghe Palmavera: 12 km</span><span class="tag">Entree ~€5</span>
+    </div>
+  </div>
+
+  <div class="acard" onclick="tog(this)">
+    <div class="ahead">
+      <div class="adot">·</div><div class="aemoji">⚔️</div>
+      <div class="amain"><div class="aname">1354: De Catalanen nemen de stad</div><div class="asub">Het meest bepalende moment in Alghero's geschiedenis</div></div>
+      <div class="achev">⌄</div>
+    </div>
+    <div class="abody">
+      <p>In 1354 veroverde het Koninkrijk Aragon Alghero na een belegering. De Aragonezen namen vervolgens een radicale beslissing: de volledige bevolking werd verdreven en vervangen door Catalaanse kolonisten. Nieuwe mensen, nieuwe taal, nieuw eten, nieuwe architectuur. Alghero werd letterlijk een Catalaans dorp op een Italiaans eiland — en dat is het in veel opzichten nog steeds.</p>
+      <span class="tag">1354</span><span class="tag">Catalaanse kolonisatie</span>
+    </div>
+  </div>
+
+  <div class="acard" onclick="tog(this)">
+    <div class="ahead">
+      <div class="adot">·</div><div class="aemoji">👑</div>
+      <div class="amain"><div class="aname">Karel V: "la mia bella città"</div><div class="asub">1541 · zijn mooie stad</div></div>
+      <div class="achev">⌄</div>
+    </div>
+    <div class="abody">
+      <p>In 1541 bezocht de machtigste monarch van Europa — Karel V, keizer van het Heilige Roomse Rijk en koning van Spanje — Alghero. Hij was zo onder de indruk van de stad dat hij haar "la mia bella città" noemde: mijn mooie stad. Een uitspraak die Alghero nog altijd koestert en die je overal in de stad terug ziet.</p>
+      <span class="tag">1541</span><span class="tag">Karel V</span>
+    </div>
+  </div>
+
+  <div class="acard" onclick="tog(this)">
+    <div class="ahead">
+      <div class="adot">·</div><div class="aemoji">💣</div>
+      <div class="amain"><div class="aname">Tweede Wereldoorlog: 1943</div><div class="asub">Bombardementen · wederopbouw</div></div>
+      <div class="achev">⌄</div>
+    </div>
+    <div class="abody">
+      <p>In 1943 werd Alghero zwaar gebombardeerd door geallieerde vliegtuigen als onderdeel van de aanloop naar de invasie van Sicilië. Grote delen van de moderne wijken buiten het historische centrum dateren uit de wederopbouw na de oorlog. Het middeleeuwse centrum bleef grotendeels gespaard.</p>
+      <span class="tag">1943</span>
+    </div>
+  </div>
+
+  <div class="slabel" style="margin-top:4px">Weetjes</div>
+
+  <div class="acard" onclick="tog(this)">
+    <div class="ahead">
+      <div class="adot">·</div><div class="aemoji">🗺️</div>
+      <div class="amain"><div class="aname">Enige Catalaanse stad buiten Spanje</div><div class="asub">Alguerès · levende taal</div></div>
+      <div class="achev">⌄</div>
+    </div>
+    <div class="abody">
+      <p>Alghero is de enige stad buiten Spanje en Andorra waar een authentiek Catalaans dialect — Alguerès — nog gesproken wordt. Straatnaamborden zijn tweetalig: Italiaans én Catalaans. Er zijn tweetalige scholen en het dialect wordt actief beschermd. Luister goed: je hoort de gelijkenis met Spaans maar het is duidelijk anders dan Italiaans.</p>
+      <span class="tag">Alguerès dialect</span><span class="tag">Tweetalige borden</span>
+    </div>
+  </div>
+
+  <div class="acard" onclick="tog(this)">
+    <div class="ahead">
+      <div class="adot">·</div><div class="aemoji">🧬</div>
+      <div class="amain"><div class="aname">De Catalaanse kolonisatie zit in het DNA</div><div class="asub">Genetisch uniek in Europa</div></div>
+      <div class="achev">⌄</div>
+    </div>
+    <div class="abody">
+      <p>Genetisch onderzoek heeft aangetoond dat de bevolking van Alghero nog altijd significant verschilt van de rest van Sardinië. De massale vervanging van de bevolking door Catalaanse kolonisten in 1354 is 670 jaar later nog steeds zichtbaar in het DNA van de huidige inwoners. Een uniek voorbeeld van hoe een historische beslissing letterlijk biologische sporen nalaat.</p>
+      <span class="tag">Wetenschappelijk bewezen</span>
+    </div>
+  </div>
+
+  <div class="acard" onclick="tog(this)">
+    <div class="ahead">
+      <div class="adot">·</div><div class="aemoji">🦞</div>
+      <div class="amain"><div class="aname">Kreeft is hier door de Spanjaarden</div><div class="asub">Aragosta alla catalana · 700 jaar oud recept</div></div>
+      <div class="achev">⌄</div>
+    </div>
+    <div class="abody">
+      <p>De Aragosta alla catalana — de kreeft met ui, tomaat en olijfolie die hét gerecht van Alghero is — stamt direct uit de Catalaanse keuken die de kolonisten in 1354 meebrachten. Elke keer als je dit gerecht eet, proef je letterlijk een 670 jaar oud stukje geschiedenis. Tomaten kwamen overigens pas later vanuit de Nieuwe Wereld, dus het originele recept zag er net even anders uit.</p>
+      <span class="tag">Recept uit 1354</span><span class="tag">Catalaans erfgoed</span>
+    </div>
+  </div>
+
+  <div class="acard" onclick="tog(this)">
+    <div class="ahead">
+      <div class="adot">·</div><div class="aemoji">🏛️</div>
+      <div class="amain"><div class="aname">De stadsmuren die je nog ziet zijn middeleeuws</div><div class="asub">12e–16e eeuw · Doria en Aragonezen</div></div>
+      <div class="achev">⌄</div>
+    </div>
+    <div class="abody">
+      <p>De Bastioni die je bewandelt zijn grotendeels origineel. De Genuese Doria-familie begon ze in de 12e eeuw, de Aragonezen versterkten ze in de 14e en 15e eeuw. De ronde torens langs de muren zijn typisch Aragonees. Toen Karel V in 1541 langskwam, stonden deze muren er al meer dan 200 jaar.</p>
+      <span class="tag">12e–16e eeuw</span><span class="tag">Genuees + Aragonees</span>
+    </div>
+  </div>
+
+</div>
 <!-- ===== VOUCHERS ===== -->
 <div class="panel" id="vouchers">
 
